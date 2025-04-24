@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProductListItemContainer = styled.li`
-    height: 22vh;
+    height: 225vh;
     width: 18vw;
     background-color: #ffffff;
     display: flex;
