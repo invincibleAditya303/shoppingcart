@@ -80,9 +80,11 @@ const ShoppingCart = () => {
 
     useEffect(() => {
         updateCart()
-    }, [totalPrice, cartList])
+    })
+
 
     const totalPercentage = (totalPrice/1000) * 100
+    console.log(totalPercentage)
 
 
     return (
@@ -98,7 +100,7 @@ const ShoppingCart = () => {
             </ProductsContainer>
             <CartSummaryContainer totalPercentage={totalPercentage}>
                 <CartSummaryHeading>Cart Summary</CartSummaryHeading>
-                <CartSummaryTextContainer total={totalPercentage}>
+                <CartSummaryTextContainer totalPercentage={totalPercentage}>
                     <CartSummaryTotalContainer>
                         <SubtotalText>Subtotal</SubtotalText>
                         <Subtotal>${totalPrice}</Subtotal>
@@ -106,7 +108,7 @@ const ShoppingCart = () => {
                     {totalPercentage<100 && <FreeGiftContainer>
                         <FreeGiftText>Add ${1000-totalPrice} more to get a FREE Wireless Mouse</FreeGiftText>
                         <TotalThresholdContainer>
-                            <PercentageCompletion totalPercentage></PercentageCompletion>
+                            <PercentageCompletion totalPercentage={totalPercentage}></PercentageCompletion>
                         </TotalThresholdContainer>
                     </FreeGiftContainer>}
                     {totalPercentage>100 && <FreeGiftText>You got a free Wireless Mouse</FreeGiftText>}
