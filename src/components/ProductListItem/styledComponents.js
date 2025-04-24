@@ -10,6 +10,10 @@ export const ProductListItemContainer = styled.li`
     border-radius: 5px;
     list-style-type: none;
     margin-right: 15px;
+
+    @media (width < 776px) {
+        height: 20vh;
+    }
 `
 
 export const ProductText = styled.p`
@@ -18,6 +22,10 @@ export const ProductText = styled.p`
     font-weight: 500;
     align-self: flex-start;
     padding-left: 5px;
+
+    @media (width < 776px) {
+        font-size: 10px;
+    }
 `
 
 export const AddToCartButton = styled.button`
@@ -33,4 +41,10 @@ export const AddToCartButton = styled.button`
     margin-bottom: 5px;
     cursor: pointer;
     outline: none;
+
+    @media (width < 776px) {
+        height: 24px;
+        width: 15vw;
+        font-size: 10px;
+    }
 `

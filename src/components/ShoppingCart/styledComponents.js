@@ -13,21 +13,30 @@ export const ShoppingCartHeading = styled.h1`
     font-size: 32px;
     font-family: "Roboto";
     font-weight: bold;
+
+    @media (width < 776px) {
+        font-size: 16px;
+    }
 `
 
 export const ProductsContainer = styled.div`
-    height: 24vh;
+    height: 26vh;
     width: 80%;
+    margin-bottom: 10px;
 `
 
 export const ProductsHeading = styled.p`
     font-size: 24px;
     font-family: "Roboto";
     font-weight: 500;
+
+    @media (width < 776px) {
+    font-size: 12px;
+    }
 `
 
 export const ProductsListContainer = styled.ul`
-    height: 22vh;
+    height: 25vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -46,6 +55,10 @@ export const CartSummaryHeading = styled.p`
     font-size: 24px;
     font-family: "Roboto";
     font-weight: 500;
+
+    @media (width < 776px) {
+        font-size: 12px;
+    }
 `
 
 export const CartSummaryTextContainer = styled.div`
@@ -72,12 +85,20 @@ export const SubtotalText = styled.p`
     font-size: 18px;
     font-family: "Roboto";
     font-weight: 200;
+
+    @media (width < 776px) {
+        font-size: 10px;
+    }
 `
 
 export const Subtotal = styled.p`
     font-size: 22px;
     font-family: "Roboto";
     font-weight: 500;
+
+    @media (width < 776px) {
+        font-size: 12px;
+    }
 `
 
 export const FreeGiftContainer = styled.div`
@@ -94,6 +115,10 @@ export const FreeGiftText = styled.p`
     font-family: "Roboto";
     padding-left: 2.5%;
     align-self: flex-start;
+
+    @media (width < 776px) {
+        font-size: 10px;
+    }
 `
 
 export const TotalThresholdContainer = styled.div`
@@ -118,6 +143,10 @@ export const CartItemText = styled.p`
     font-size: 24px;
     font-family: "Roboto";
     font-weight: 500;
+
+    @media (width < 776px) {
+        font-size: 12px;
+    }
 `
 
 export const CartListContainer = styled.ul`
@@ -138,10 +167,18 @@ export const CartEmptyTitle = styled.p`
     font-family: "Roboto";
     font-weight: 400;
     text-align: center;
+
+    @media (width < 776px) {
+        font-size: 12px;
+    }
 `
 
 export const CartEmptyText = styled.p`
     font-size: 14px;
     font-family: "Roboto";
     text-align: center;
+
+    @media (width < 776px) {
+        font-size: 10px;
+    }
 `
