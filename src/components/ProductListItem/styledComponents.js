@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProductListItemContainer = styled.li`
-    height: 225vh;
+    height: 25vh;
     width: 18vw;
     background-color: #ffffff;
     display: flex;
@@ -30,6 +30,7 @@ export const AddToCartButton = styled.button`
     padding: 5px;
     border-radius: 5px;
     border-width: 0px;
+    margin-bottom: 5px;
     cursor: pointer;
     outline: none;
 `
